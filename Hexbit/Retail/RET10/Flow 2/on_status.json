@@ -1,0 +1,221 @@
+{
+    "message": {
+        "ack": {
+            "status": "ACK"
+        },
+        "response": {
+            "context": {
+                "domain": "ONDC:RET10",
+                "country": "IND",
+                "city": "std:080",
+                "action": "on_status",
+                "core_version": "1.2.0",
+                "bap_id": "buyer-app-preprod-v2.ondc.org",
+                "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
+                "bpp_id": "techondc.hexbit.io",
+                "bpp_uri": "https://techondc.hexbit.io/",
+                "transaction_id": "28099f8b-a60a-400d-9fe2-a71da5edad6c",
+                "message_id": "4f4f066a-6e8b-46b4-bfa3-26dde3affba9",
+                "timestamp": "2024-10-04T01:18:38.007Z",
+                "ttl": "PT30S"
+            },
+            "message": {
+                "order": {
+                    "documents": [
+                        {
+                            "label": "Invoice"
+                        }
+                    ],
+                    "id": "2024-10-04-687338",
+                    "state": "Created",
+                    "provider": {
+                        "id": "6523f7f10a9003d447f9741e",
+                        "locations": [
+                            {
+                                "id": "6523f7f10a9003d447f9741e"
+                            }
+                        ]
+                    },
+                    "items": [
+                        {
+                            "id": "65a648f9c5a7f79e0e4fee19",
+                            "fulfillment_id": "6523f7f10a9003d447f9741e",
+                            "quantity": {
+                                "count": 2
+                            }
+                        }
+                    ],
+                    "billing": {
+                        "address": {
+                            "name": "Rishab Raj Singh",
+                            "building": "Home 1324",
+                            "locality": "Outer Ring Road",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560037"
+                        },
+                        "phone": "8292447564",
+                        "name": "Rishab Raj Singh",
+                        "email": "prakashpramanickjsr1717@gmail.com",
+                        "created_at": "2024-10-04T01:14:58.741Z",
+                        "updated_at": "2024-10-04T01:14:58.741Z"
+                    },
+                    "fulfillments": [
+                        {
+                            "id": "6523f7f10a9003d447f9741e",
+                            "@ondc/org/provider_name": "HEXBit.io",
+                            "type": "Delivery",
+                            "@ondc/org/TAT": "PT60M",
+                            "tracking": true,
+                            "state": {
+                                "descriptor": {
+                                    "code": "Pending"
+                                }
+                            },
+                            "start": {
+                                "location": {
+                                    "id": "6523f7f10a9003d447f9741e",
+                                    "descriptor": {
+                                        "name": "HEXBit.io"
+                                    },
+                                    "gps": "12.982981, 77.686527",
+                                    "address": {
+                                        "locality": "Doddanekkundi",
+                                        "city": "BENGALURU",
+                                        "state": "KARNATAKA",
+                                        "area_code": "560001"
+                                    }
+                                },
+                                "time": {
+                                    "timestamp": "2024-10-04T01:18:38.007Z",
+                                    "range": {
+                                        "start": "2024-10-04T01:18:38.007Z",
+                                        "end": "2023-12-04T07:49:17.286Z"
+                                    }
+                                },
+                                "contact": {
+                                    "email": "rishavrajcrj@gmail.com",
+                                    "phone": "9939197376"
+                                }
+                            },
+                            "end": {
+                                "person": {
+                                    "name": "Rishab Raj Singh"
+                                },
+                                "contact": {
+                                    "email": "prakashpramanickjsr1717@gmail.com",
+                                    "phone": "8292447564"
+                                },
+                                "location": {
+                                    "gps": "12.979262,77.695246",
+                                    "address": {
+                                        "name": "Rishab Raj Singh",
+                                        "building": "Home 1324",
+                                        "locality": "Outer Ring Road",
+                                        "city": "Bengaluru",
+                                        "state": "Karnataka",
+                                        "country": "IND",
+                                        "area_code": "560037"
+                                    }
+                                },
+                                "time": {
+                                    "timestamp": "2024-10-04T01:18:38.007Z",
+                                    "range": {
+                                        "start": "2024-10-04T01:18:38.007Z",
+                                        "end": "2023-12-04T07:49:17.286Z"
+                                    }
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "state",
+                                    "list": [
+                                        {
+                                            "code": "ready_to_ship",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "tracking",
+                                    "list": [
+                                        {
+                                            "code": "gps_enabled",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "url_enabled",
+                                            "value": "yes"
+                                        },
+                                        {
+                                            "code": "url",
+                                            "value": "https://sellerNP.com/ondc/tracking_url"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "quote": {
+                        "ttl": "P1D",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1045.32"
+                        },
+                        "breakup": [
+                            {
+                                "@ondc/org/item_id": "65a648f9c5a7f79e0e4fee19",
+                                "@ondc/org/item_quantity": {
+                                    "count": 2
+                                },
+                                "title": "Tomato Hexbit 1Kg",
+                                "@ondc/org/title_type": "item",
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "936.32"
+                                },
+                                "item": {
+                                    "price": {
+                                        "currency": "INR",
+                                        "value": "468.16"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "payment": {
+                        "params": {
+                            "amount": "1045.32",
+                            "currency": "INR"
+                        },
+                        "status": "NOT-PAID",
+                        "type": "ON-FULFILLMENT",
+                        "collected_by": "BPP",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                        "@ondc/org/settlement_basis": "return_window_expiry",
+                        "@ondc/org/settlement_window": "P1D",
+                        "@ondc/org/withholding_amount": "0.00",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "upi_address": "gft@oksbi",
+                                "settlement_bank_account_no": "123456789087",
+                                "settlement_ifsc_code": "SBIN0070074",
+                                "settlement_timestamp": "2024-10-04T01:14:58.984Z",
+                                "beneficiary_name": "Xilligence PRIVATE LIMITED",
+                                "bank_name": "SBI",
+                                "branch_name": "Andheri"
+                            }
+                        ]
+                    },
+                    "created_at": "2024-10-04T01:15:01.833Z",
+                    "updated_at": "2024-10-04T01:15:01.833Z"
+                }
+            }
+        }
+    }
+}
